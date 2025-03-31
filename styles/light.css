@@ -17,13 +17,17 @@
   /* для цвета текста заголовков */
   --title-text-color: #353430;
 
-  /* цвет заголовков */ /* в светлой теме еще цвет навигации*/
+  /* цвет заголовков */
   --title-color: #353430;
+  /* в светлой теме еще цвет навигации*/
+  --nav-color: #353430;
+  --nav-solid-color: #353430;
   /* цвет всех абзацев */
   --text-color: #353430;
 
   /*  */
   --hover-color: rgba(50, 49, 45, 0.4);
+  --solid-color:  #353430; 
 
   /* цвет фокуса */
   --main-title-color: #ffc2e6;
@@ -32,12 +36,12 @@
 
 .theme-light .header__theme-menu-list {
   /*  */
-  color: var(--title-color, #353430);
+  color: var(--nav-color, #353430);
   /*  */
 }
 
 .theme-light .rec {
-  visibility: hidden;
+  display: none;
 }
 
 .theme-light .decorated-zone::before {
@@ -71,30 +75,42 @@
 @media (prefers-color-scheme: light) {
   :root {
     /* Дублируем переменные светлой темы */
+    --bg-image: url(../images/cover-image-light.png);
+    --bg-color: #fff1f7;
+    --main-color: #ff8dcb;
+    --title-text-color: #353430;
+    --title-color: #353430;
+    --text-color: #353430;
+    --hover-color: rgba(50, 49, 45, 0.4);
+    --main-title-color: #ffc2e6;
+    --shadow-color: #ff8dcb;
+    --nav-color: #353430;
+    --nav-solid-color: #353430;
+    --solid-color:  #353430; 
 
     .header__theme-menu-list {
       /*  */
-      color: var(--title-color, #353430);
+      color: var(--nav-color, #353430);
       /*  */
     }
 
     .rec {
-      visibility: hidden;
+      display: none;
     }
 
     .decorated-zone::before {
-      border-right: 1px solid var(--text-color, #353430);
-      border-block-start: 1px solid var(--text-color, #353430);
+      border-right: 1px solid var(--nav-solid-color, #353430);
+      border-block-start: 1px solid var(--nav-solid-color, #353430);
     }
 
     .decorated-zone::after {
-      border-left: 1px solid var(--text-color, #353430);
-      border-block-end: 1px solid var(--text-color, #353430);
+      border-left: 1px solid var(--nav-solid-color, #353430);
+      border-block-end: 1px solid var(--nav-solid-color, #353430);
     }
 
     .header__theme-menu-button_active {
       pointer-events: none;
-      border-color: var(--text-color, #353430);
+      border-color: var(--nav-solid-color, #353430);
     }
 
     .header__theme-menu-button:focus {

@@ -20,8 +20,16 @@
   --hover-color: rgba(255, 0, 112, 0.4);
   --title-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
+
+  --nav-color: #ff0070;
+  --nav-solid-color: #ff0070;
+  --solid-color: #ff0070;
 }
 
 .theme-dark .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
+}
+
+.theme-dark .rec {
+  display: block;
 }

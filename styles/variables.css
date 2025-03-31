@@ -4,7 +4,7 @@
 */
 
 :root {
-  --font-family: "IBM Plex mono";
+  --font-family: "IBM Plex mono", monospace;
   --font-weight-regular: 400;
   --title-size: 116px;
   --title-line-height: 95.7px;
@@ -19,20 +19,28 @@
   --text-color: #f1b2ce;
   --main-title-color: #db00ff;
 
+  --solid-color:  #ff0070; 
+
   --shadow-color: #ff0070;
   --hover-color: rgba(255, 0, 112, 0.4);
   --title-color: #000028;
+
+  --nav-color: #ff0070;
+  --nav-solid-color: #ff0070;
+
   --bg-image: url(../images/cover-image-dark.png);
 }
 
 @media (width >= 768px) {
   :root {
     --title-size: 120px;
+    --title-line-height: 99px;
   }
 }
 
 @media (width >= 1024px) {
   :root {
     --title-size: 157px;
+    --title-line-height: 130px;
   }
 }
