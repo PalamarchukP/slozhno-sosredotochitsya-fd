@@ -6,6 +6,8 @@
 @import "./dark.css";
 @import url(./variables.css);
 @import url(./dark.css);
+@import "./light.css";
+@import url(./light.css);
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
@@ -32,8 +34,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-
+  background-attachment: fixed;
 }
 
 .rec::before {
@@ -91,9 +92,6 @@
   gap: 10px;
   list-style: none;
   align-self: start;
-}
-
-.header__theme-menu-item {
 }
 
 .header__theme-menu-button {
@@ -494,7 +492,8 @@
   .article_cell {
     min-width: 315px;
   }
-  .footer_title {
+
+  /* .footer_title {
     font-size: var(--title-size);
-  }
+  } */
 }
