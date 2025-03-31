@@ -1,26 +1,17 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
-/* Стили для основной темы и основной ширины экрана
-медиавыражения для адаптива под разные экраны */
-
 @import url(./variables.css);
 @import url(./dark.css);
 @import url(./light.css);
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  font-size: var(--font-size);
-  font-family: var(--font-family);
+  font-size: var(--font-size, 18px);
+  font-family: var(--font-family, "IBM Plex mono", monospace);
   background-color: var(--bg-color, #000028);
   background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
-  /*  */
   margin: 0 auto;
-  /*  */
 }
 
 .header {
@@ -62,7 +53,7 @@
   inline-size: 25px;
   block-size: 25px;
   border-right: 1px solid var(--solid-color, #ff0070);
-  border-block-start: 1px solid var(--solid-color #ff0070);
+  border-block-start: 1px solid var(--solid-color, #ff0070);
 }
 
 .decorated-zone::after {
@@ -82,9 +73,7 @@
 }
 
 .header__theme-menu-list {
-  /*  */
   color: var(--nav-solid-color, #ff0070);
-  /*  */
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -97,7 +86,7 @@
   line-height: 1;
   text-align: center;
   background-color: transparent;
-  font-weight: 400;
+  font-weight: var(--font-weight-regular, 400);
   text-transform: lowercase;
   padding: 2px 13px 4px;
 }
@@ -113,7 +102,6 @@
 
 .header__theme-menu-button:focus-visible {
   border-bottom-color: var(--main-color, #ff0070);
-  /* нижнее подчеркивание */
 }
 
 .header__theme-menu-button:hover {
@@ -122,18 +110,18 @@
 
 .header_title {
   display: block;
-  font-size: var(--title-size);
-  font-weight: 700;
+  font-size: var(--title-size, 116px);
+  font-weight: var(--font-weight-large, 700);
   color: var(--main-title-color, #db00ff);
   text-shadow: 4px 4px 0 var(--shadow-color, #ff0070);
   grid-row: 2;
   grid-column: 1/4;
-  line-height: var(--title-line-height);
+  line-height: var(--title-line-height, 95.7px);
   justify-self: start;
 }
 
 .header_text {
-  font-weight: bold;
+  font-weight: var(--font-weight-large, 700);
   grid-row: 3;
   grid-column: 1/4;
 }
@@ -189,22 +177,22 @@
 
 .main_title {
   color: var(--title-text-color, #ff0070);
-  font-size: var(--font-size);
+  font-size: var(--font-size, 18px);
 }
 
 .mini_title {
-  font-size: var(--font-size);
+  font-size: var(--font-size, 18px);
 }
 
 .content_text {
-  font-size: var(--font-size);
+  font-size: var(--font-size, 18px);
   color: var(--text-color, #f1b2ce);
   line-height: var(--content-line-height);
 }
 
 .mini_title_answer {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size, 18px);
+  font-weight: var(--font-weight-regular, 400);
 }
 
 .links {
@@ -249,13 +237,13 @@
 
 .footer_title {
   display: block;
-  font-size: var(--title-size);
-  font-weight: 700;
+  font-size: var(--title-size, 116px);
+  font-weight: var(--font-weight-large, 700);
   color: var(--main-title-color, #db00ff);
   text-shadow: 2px 2px 0 var(--shadow-color, #ff0070);
   grid-row: 2;
   grid-column: 1/4;
-  line-height: var(--title-line-height);
+  line-height: var(--title-line-height, 95.7px);
   justify-self: start;
 }
 
@@ -273,10 +261,10 @@
   }
 
   .header_title {
-    font-size: var(--title-size);
+    font-size: var(--title-size, 120px);
     grid-row: 2;
     grid-column: 1/4;
-    line-height: var(--title-line-height);
+    line-height: var(--title-line-height, 99px);
     justify-self: start;
     position: relative;
     inset-inline-start: calc(-1 * var(--main-gap));
@@ -289,9 +277,7 @@
   }
 
   .header__theme-menu-list {
-    /*  */
     color: var(--main-color, #ff0070);
-    /*  */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -300,7 +286,7 @@
   }
 
   .header_text {
-    font-weight: bold;
+    font-weight: var(--font-weight-large, 700);
     grid-row: 3;
     width: 50%;
   }
@@ -352,12 +338,8 @@
   .section {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    /*  */
     grid-column-start: 1;
     grid-column-end: 3;
-    /*  */
-    /* column-gap: 20px;
-    row-gap: 20px; */
     gap: 20px;
   }
   .cell-content {
@@ -430,7 +412,7 @@
   }
 
   .footer_title {
-    font-size: var(--title-size);
+    font-size: var(--title-size, 120px);
   }
 }
 
@@ -448,9 +430,7 @@
   }
 
   .header__theme-menu-list {
-    /*  */
     color: var(--main-color, #ff0070);
-    /*  */
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -458,12 +438,12 @@
   }
 
   .header_title {
-    font-size: var(--title-size);
-    line-height: var(--title-line-height);
+    font-size: var(--title-size, 157px);
+    line-height: var(--title-line-height, 130px);
   }
 
   .header_text {
-    font-weight: bold;
+    font-weight: var(--font-weight-large, 700);
     grid-row: 3;
     width: 50%;
     align-self: center;
@@ -489,9 +469,7 @@
   .article_slot {
     min-width: 648px;
   }
-  /* .article_cell {
-    min-width: 648px;
-  } */
+
   .cell-content {
     display: flex;
     flex-direction: row;
@@ -503,7 +481,7 @@
     min-width: 315px;
   }
 
-  /* .footer_title {
-    font-size: var(--title-size);
-  } */
+  .footer_title {
+    font-size: var(--title-size, 157px);
+  }
 }

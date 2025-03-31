@@ -6,6 +6,7 @@
 :root {
   --font-family: "IBM Plex mono", monospace;
   --font-weight-regular: 400;
+  --font-weight-large: 700;
   --title-size: 116px;
   --title-line-height: 95.7px;
   --bg-image: url(../images/cover-image-dark.png);
