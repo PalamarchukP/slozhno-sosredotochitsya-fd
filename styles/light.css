@@ -16,7 +16,7 @@
 
   /* для цвета текста заголовков */
   --title-text-color: #353430;
-
+  --solid-color: #353430;
   /* цвет заголовков */
   --title-color: #353430;
   /* в светлой теме еще цвет навигации*/
@@ -27,7 +27,6 @@
 
   /*  */
   --hover-color: rgba(50, 49, 45, 0.4);
-  --solid-color:  #353430; 
 
   /* цвет фокуса */
   --main-title-color: #ffc2e6;
@@ -86,7 +85,7 @@
     --shadow-color: #ff8dcb;
     --nav-color: #353430;
     --nav-solid-color: #353430;
-    --solid-color:  #353430; 
+    --solid-color: #353430;
 
     .header__theme-menu-list {
       /*  */

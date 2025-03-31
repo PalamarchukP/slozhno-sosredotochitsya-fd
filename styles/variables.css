@@ -12,14 +12,12 @@
   --font-size: 18px;
   --content-line-height: 23.4px;
   --main-gap: 20px;
-
+  --solid-color: #ff0070;
   --bg-color: #000028;
   --main-color: #ff0070;
   --title-text-color: #ff0070;
   --text-color: #f1b2ce;
   --main-title-color: #db00ff;
-
-  --solid-color:  #ff0070; 
 
   --shadow-color: #ff0070;
   --hover-color: rgba(255, 0, 112, 0.4);
