@@ -152,13 +152,7 @@ article {
   gap: 10px;
 }
 
-.cell-content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.special-content {
+.content {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -228,11 +222,6 @@ article {
     padding: 20px;
   }
 
-  .title {
-    font-size: var(--title-size, 120px);
-    line-height: var(--title-line-height, 99px);
-  }
-
   .header_title {
     position: relative;
     inset-inline-start: calc(-1 * var(--main-gap));
@@ -298,8 +287,6 @@ article {
 
   .image {
     display: block;
-    justify-content: center;
-    align-items: center;
     height: 100%;
     object-fit: cover;
   }
@@ -338,11 +325,6 @@ article {
 
   .header__theme-menu-list {
     flex-direction: row;
-  }
-
-  .title {
-    font-size: var(--title-size, 157px);
-    line-height: var(--title-line-height, 130px);
   }
 
   .header_text {

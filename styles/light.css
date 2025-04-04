@@ -6,7 +6,6 @@
 
 :root.theme-light {
   --bg-image: url(../images/cover-image-light.png);
-  /* для выделения заголовков а также для тени */
   --bg-color: #fff1f7;
   --main-color: #ff8dcb;
 
