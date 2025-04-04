@@ -8,22 +8,13 @@
   --bg-image: url(../images/cover-image-light.png);
   --bg-color: #fff1f7;
   --main-color: #ff8dcb;
-
-  /* для цвета текста заголовков */
   --title-text-color: #353430;
   --solid-color: #353430;
-  /* цвет заголовков */
   --title-color: #353430;
-  /* в светлой теме еще цвет навигации*/
   --nav-color: #353430;
   --nav-solid-color: #353430;
-  /* цвет всех абзацев */
   --text-color: #353430;
-
-  /*  */
   --hover-color: rgba(50, 49, 45, 0.4);
-
-  /* цвет фокуса */
   --main-title-color: #ffc2e6;
   --shadow-color: #ff8dcb;
 }
@@ -31,38 +22,7 @@
 .theme-light .rec {
   display: none;
 }
-/* .theme-light .header__theme-menu-list {
-  color: var(--nav-color, #353430);
-}
 
-
-.theme-light .decorated-zone::before {
-  border-right: 1px solid var(--text-color, #353430);
-  border-block-start: 1px solid var(--text-color, #353430);
-}
-
-.theme-light .decorated-zone::after {
-  border-left: 1px solid var(--text-color, #353430);
-  border-block-end: 1px solid var(--text-color, #353430);
-}
-
-.theme-light .header__theme-menu-button_active {
-  pointer-events: none;
-  border-color: var(--text-color, #353430);
-}
-
-.theme-light .header__theme-menu-button:focus {
-  outline: none;
-}
-
-.theme-light .header__theme-menu-button:focus-visible {
-  border-bottom-color: var(--text-color, #353430);
-}
-
-.theme-light .header__theme-menu-button:hover {
-  border: 1px solid var(--hover-color, rgba(50, 49, 45, 0.4));
-}
-*/
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url(../images/cover-image-light.png);
@@ -78,39 +38,8 @@
     --nav-solid-color: #353430;
     --solid-color: #353430;
 
-    .header__theme-menu-list {
-      color: var(--nav-solid-color, #353430);
-    }
-
     .rec {
       display: none;
-    }
-
-    .decorated-zone::before {
-      border-right: 1px solid var(--nav-solid-color, #353430);
-      border-block-start: 1px solid var(--nav-solid-color, #353430);
-    }
-
-    .decorated-zone::after {
-      border-left: 1px solid var(--nav-solid-color, #353430);
-      border-block-end: 1px solid var(--nav-solid-color, #353430);
-    }
-
-    .header__theme-menu-button_active {
-      pointer-events: none;
-      border-color: var(--nav-solid-color, #353430);
-    }
-
-    .header__theme-menu-button:focus {
-      outline: none;
-    }
-
-    .header__theme-menu-button:focus-visible {
-      border-bottom-color: var(--text-color, #353430);
-    }
-
-    .header__theme-menu-button:hover {
-      border: 1px solid var(--hover-color, rgba(50, 49, 45, 0.4));
     }
   }
 }
